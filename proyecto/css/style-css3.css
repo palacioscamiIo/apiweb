@@ -1,0 +1,21 @@
+#header-title { 
+    background: #DDDDDD; 
+    border: 1px solid #999999; 
+    display: block; 
+    margin: 10px auto; 
+    padding: 20px; 
+    text-align: center;
+
+    -moz-box-shadow: rgb(150,150,150) 5px 5px; 
+    -webkit-box-shadow: rgb(150,150,150) 5px 5px;
+    box-shadow: rgb(73, 116, 18) 5px 10px inset; /* Cambio de valores en la propiedad de box-shadow */
+
+    background: -webkit-radial-gradient(center,circle,#FFFFFF 0%, #006699 200%);
+   
+    -webkit-transition: width .35s ease-in-out;
+} 
+#span-title {
+    font: bold 36px verdana, sans-serif;
+    text-shadow: rgba(0,0,0,0.5) 3px 3px 5px; 
+    color: hsla(120, 100%, 50%, 0.5);
+}
