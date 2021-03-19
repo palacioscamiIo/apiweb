@@ -1,0 +1,22 @@
+body {
+    font-size: 22px;    /* Tamaño general */
+  }
+  
+  h1 {
+    font-size: 2em;    /* El doble del tamaño general: 44px */
+  }
+  
+  h2 {
+    font-size: 1em;    /* El mismo tamaño general: 22px */
+  }
+
+  @font-face {
+    font-family: "Bitstream Vera Serif Bold";
+    src: url("http://developer.mozilla.org/@api/deki/files/2934/=VeraSeBd.ttf");
+  }
+
+  p {
+    font-family: "Bitstream Vera Serif Boldt";
+    font-size: 150%;
+  }
+  
