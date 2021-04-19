@@ -1,0 +1,174 @@
+.contenido {
+    text-align: center;
+    padding: 0px;
+    margin: initial 0px initial 0px;
+}
+
+h1 {
+    color: black;
+}
+
+.caracteristicas {
+    width: 350px;
+    display: inline-block;
+    text-align: left;
+    padding-top: 40px;
+    margin: 10px;
+    vertical-align: baseline;
+}
+
+.cuadro-texto input[type=text] {
+    display: inline-block;
+    text-align: center;
+    width: 150px;
+    height: 80%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0px 4px;
+    padding: 0px;
+    vertical-align: middle;
+    font-size: 10px;
+    resize: none;
+}
+
+.cuadro-texto label {
+    display: inline-block;
+    font-size: 14px;
+    width: 100px;
+    text-align: left;
+    white-space: normal;
+    margin-right: 50px;
+    height: 100%;
+}
+
+.cuadro-texto {
+    display: block;
+    height: 30px;
+    margin: 0px;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.btn-mod {
+    padding: 10px 15px;
+    border-radius: 20px;
+    width: 100px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.cuadro-texto input:hover {
+    color: dodgerblue;
+}
+
+.imagen {
+    width: 220px;
+    height: 220px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    background-image: url("../../images/agregar-perfil.png");
+}
+
+.contenido input[type=button]:hover {
+    background-color: dodgerblue;
+}
+
+.contenido input[type=button] {
+    border: none;
+    background: gray;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.btn-mod {
+    font-size: 30px;
+    width: 180px;
+    height: 50px;
+    color: black;
+    padding: 0px;
+    margin: 0px;
+}
+
+.imagen .material-icons {
+    float: right;
+}
+
+.cuadro-texto input[type=submit] {
+    background-color: darkgrey;
+}
+
+    .cuadro-texto input[type=submit]:hover {
+        background-color: dodgerblue;
+        color: black;
+    }
+.ventana {
+    background-color: gray;
+    width: 35%;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 33px;
+    border-radius: 22px;
+    position: fixed;
+    left: 34%;
+    bottom: 20%;
+    display: none;
+}
+
+    .ventana a {
+        width: 150px;
+        height: 50px;
+        background-color: white;
+        margin: 20px 5% 10px 5%;
+        padding: 5px 30px;
+        border-radius: 20px;
+        color: black;
+        text-decoration: none;
+    }
+
+        .ventana a:hover {
+            background-color: dodgerblue;
+        }
+
+    .ventana i {
+        font-size: 150px;
+        display: block;
+    }
+
+@media screen and (max-width: 500px) {
+    .caracteristicas {
+        padding: 0px;
+    }
+    .ventana {
+        width: 80%;
+        left: 10%;
+    }
+
+        .ventana input[type=button] {
+            width: 80%;
+        }
+
+        .ventana i {
+            font-size: 100px;
+        }
+}
+
+@media screen and (max-width: 940px) and (min-width: 500px) {
+    .ventana {
+        width: 60%;
+        left: 20%;
+    }
+
+        .ventana input[type=button] {
+            width: 60%;
+        }
+
+        .ventana i {
+            font-size: 125px;
+        }
+}

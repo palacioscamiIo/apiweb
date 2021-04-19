@@ -1,0 +1,291 @@
+.contenido {
+    height: 100px;
+}
+
+    .contenido h1 {
+        color: black;
+        padding: 14px 0px;
+        text-decoration: none;
+        text-align: center;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .contenido .search-container {
+        float: right;
+        margin: -80px 10px;
+        border: 2px solid black;
+        border-radius: 50px 50px;
+        width: 25%;
+        height: 40px;
+    }
+
+    .contenido input[type=text] {
+        padding: 6px;
+        margin-top: 2px;
+        font-size: 17px;
+        border: none;
+        background: transparent;
+        width: 70%;
+        height: 30px;
+    }
+
+    .contenido .search-container input[type=button] {
+        float: left;
+        padding: 9px 10px;
+        height: 100%;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        width: 20%;
+        font-size: 28px;
+    }
+
+        .contenido .search-container input[type=button]:hover {
+            background: #ccc;
+            border-radius: 50px 0px 0px 50px;
+        }
+
+.search-container input[type=button] {
+    border-radius: 20px;
+}
+/*--------- cajas de los producto-----------------*/
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 30px;
+}
+
+    .flex-container > div {
+        background: #f1f1f1;
+        width: 270px;
+        height: 144px;
+        margin: 10px;
+        padding: 0px;
+        text-align: center;
+        font-size: 30px;
+        border: 2px solid black;
+    }
+
+.caracteristicas {
+    display: inline-block;
+    height: 100%;
+    width: 226px;
+    padding: 5px 0px;
+    margin: 0px;
+    float: left;
+}
+
+.contenido input[type=button] {
+    border: none;
+    background: gray;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    float: right;
+}
+
+.cuadro-texto h4 {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: 100px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 3px 4px;
+    padding: 3px 0px;
+    float: right;
+    font-size: 10px;
+}
+
+.estado-proceso {
+    background-color: palegreen;
+}
+
+.estado-terminado {
+    background-color: rosybrown;
+}
+
+.contenido a:hover {
+    background-color: dodgerblue;
+}
+
+.cuadro-texto label {
+    display: inline-block;
+    font-size: 14px;
+    width: 80px;
+    height: 20px;
+    float: left;
+    text-align: left;
+    margin: 3px 0px 3px 5px;
+    white-space: normal;
+}
+
+.btn-ordenes-mod {
+    width: 40px;
+    height: 100%;
+    float: right;
+    display: inline-block;
+    background: gray;
+}
+
+.cuadro-texto {
+    height: 20px;
+    margin: 1px;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.btn-ordenes {
+    border: none;
+    color: white;
+    background: gray;
+    font-size: 16px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    float: right;
+}
+
+.btn-ordenes-mod a {
+}
+
+.btn-ordenes:hover {
+    background-color: dodgerblue;
+}
+
+.btn-ordenes-mod a {
+    border: none;
+    background: gray;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    float: right;
+    padding-top: 3px;
+}
+
+    .btn-ordenes-mod a:hover {
+        background-color: dodgerblue;
+    }
+
+.ventana {
+    background-color: gray;
+    width: 35%;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 33px;
+    border-radius: 22px;
+    position: fixed;
+    left: 34%;
+    top: 30%;
+    display: none;
+}
+
+    .ventana a {
+        width: 40%;
+        height: 50px;
+        background-color: white;
+        margin: 20px 5% 10px 5%;
+        padding: 5px 30px;
+        border-radius: 20px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .ventana h4 {
+        margin-bottom: 10px;
+    }
+
+    .ventana a:hover {
+        background-color: dodgerblue;
+    }
+
+@media screen and (max-width: 500px) {
+    .contenido {
+        height: 70px;
+    }
+
+        .contenido .search-container {
+            margin: -70px 10px;
+            width: 40%;
+            height: 20px;
+        }
+
+            .contenido .search-container button {
+                width: 30%;
+                padding: 4px 1px;
+            }
+
+            .contenido .search-container input[type=button] {
+                padding: 4px 0px;
+            }
+
+        .contenido input[type=text] {
+            width: 70%;
+            padding: 3px;
+        }
+
+        .contenido h1 {
+            font-size: 25px;
+            text-align: left;
+            padding-left: 50px;
+            padding-right: 10px;
+            width: 60%;
+            font-size: 20px;
+        }
+
+    .search-container .material-icons {
+        padding: 0px;
+    }
+
+    .ventana {
+        width: 80%;
+        left: 10%;
+        top: 10%;
+    }
+
+        .ventana input[type=button] {
+            width: 40%;
+        }
+
+        .ventana i {
+            font-size: 100px;
+        }
+}
+
+@media screen and (max-width: 940px) and (min-width: 500px) {
+    .contenido .search-container {
+        float: right;
+        margin: -80px 10px;
+        border: 2px solid black;
+        border-radius: 50px 50px;
+        width: 25%;
+        height: 40px;
+    }
+
+    .contenido h1 {
+        width: 90%;
+    }
+
+    .ventana {
+        width: 60%;
+        left: 20%;
+        top: 20%;
+    }
+
+        .ventana input[type=button] {
+            width: 40%;
+        }
+
+        .ventana i {
+            font-size: 125px;
+        }
+}

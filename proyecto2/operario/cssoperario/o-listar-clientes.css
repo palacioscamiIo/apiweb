@@ -1,0 +1,240 @@
+.contenido {
+    height: 100px;
+}
+
+    .contenido h1 {
+        color: black;
+        padding: 14px 0px;
+        text-decoration: none;
+        text-align: center;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .contenido .search-container {
+        float: right;
+        margin: -80px 10px;
+        border: 2px solid black;
+        border-radius: 30px 30px;
+        width: 25%;
+        height: 40px;
+    }
+
+    .contenido input[type=text] {
+        padding: 6px;
+        margin-top: 2px;
+        font-size: 17px;
+        border: none;
+        background: transparent;
+        width: 70%;
+        height: 30px;
+    }
+
+    .contenido .search-container input[type=button] {
+        float: left;
+        padding: 9px 10px;
+        height: 100%;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        width: 20%;
+        font-size: 28px;
+    }
+
+        .contenido .search-container input[type=button]:hover {
+            background: #ccc;
+            border-radius: 50px 0px 0px 50px;
+        }
+
+.search-container input[type=button] {
+    border-radius: 20px;
+    border-radius: 20px;
+}
+/*--------- cajas de los producto-----------------*/
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 30px;
+}
+
+    .flex-container > div {
+        background: #f1f1f1;
+        width: 304px;
+        height: 114px;
+        margin: 10px;
+        padding: 0px;
+        text-align: center;
+        font-size: 30px;
+        border: 2px solid black;
+    }
+
+.img-producto {
+    display: inline-block;
+    height: 100px;
+    width: 30%;
+    margin: 2px;
+    float: left;
+}
+
+    .img-producto img {
+        height: 100%;
+        width: 100%;
+        display: block;
+        vertical-align: middle;
+    }
+
+.caracteristicas {
+    display: inline-block;
+    height: 80px;
+    width: 68%;
+    padding: 0px;
+    margin: 0px;
+    float: left;
+    padding-top: 10px;
+}
+
+.cuadro-texto h4 {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: 70px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 3px 4px;
+    padding: 2px 0px;
+    float: right;
+    font-size: 10px;
+}
+
+.btns-clientes a {
+    display: inline-block;
+    text-align: center;
+    width: auto;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px 4px 4px 4px;
+    padding: 2px 4px;
+    float: left;
+    font-size: 10px;
+    background-color: silver;
+    text-decoration: none;
+    color: black;
+}
+
+.contenido input[type=button] {
+    border: none;
+    background: gray;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    float: right;
+}
+
+    .contenido input[type=button]:hover {
+        background-color: dodgerblue;
+    }
+
+.btns-clientes a:hover {
+    background-color: dodgerblue;
+}
+
+.cuadro-texto label {
+    display: inline-block;
+    font-size: 14px;
+    width: 60px;
+    height: 20px;
+    float: left;
+    text-align: left;
+    margin: 3px 0px 3px 5px;
+    white-space: normal;
+}
+
+
+.cuadro-texto {
+    height: 22px;
+    margin: 1px;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.btn-producto {
+    border: none;
+    color: white;
+    background: gray;
+    font-size: 16px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    float: right;
+}
+
+    .btn-producto:hover {
+        background-color: dodgerblue;
+    }
+
+.btns-clientes {
+    display: inline-block;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 68%;
+    height: 30px;
+    float: right;
+}
+
+@media screen and (max-width: 500px) {
+    .contenido {
+        height: 70px;
+    }
+
+        .contenido .search-container {
+            margin: -70px 10px;
+            width: 45%;
+            height: 30px;
+        }
+
+            .contenido .search-container button {
+                width: 30%;
+                padding: 4px 1px;
+            }
+
+    .contenido .search-container input[type=button]{
+        padding: 4px 10px;
+    }
+    .contenido input[type=text] {
+        width: 70%;
+        padding: 3px;
+    }
+
+        .contenido h1 {
+            font-size: 25px;
+            text-align: left;
+            padding-left: 50px;
+            width: 70%;
+        }
+
+    .search-container .material-icons {
+        padding: 0px;
+    }
+    .btns-clientes a {
+        margin: 5px 1% 4px 1%;
+        padding: 2px 2%;
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 940px) and (min-width: 500px) {
+    .contenido .search-container {
+        float: right;
+        margin: -80px 10px;
+        border: 2px solid black;
+        border-radius: 50px 50px;
+        width: 25%;
+        height: 40px;
+    }
+}

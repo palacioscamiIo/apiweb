@@ -1,0 +1,428 @@
+.contenido {
+    height: 70%;
+}
+
+    .contenido h2 {
+        color: black;
+        padding: 14px 0px;
+        text-decoration: none;
+        text-align: center;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.estado-proceso {
+    background-color: palegreen;
+}
+
+.estado-terminado {
+    background-color: rosybrown;
+}
+
+.contenedorIzquierda {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    width: 300px;
+}
+
+.cuadro-texto {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    height: 30px;
+    width: 100%;
+}
+
+    .cuadro-texto label {
+        width: 40%;
+    }
+
+    .cuadro-texto select {
+        width: 60%;
+        height: 100%;
+    }
+
+    .cuadro-texto input[type=number] {
+        width: 60%;
+    }
+
+    .cuadro-texto input[type=text] {
+        width: 60%;
+    }
+
+.boton1 {
+    margin-left: 10%;
+    background: black;
+    color: white;
+    font-size: 15px;
+    border-radius: 20px 20px;
+    width: 140%;
+}
+
+.Contenedor1_1 {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 1px solid black;
+    height: 90px;
+    width: 340px;
+}
+
+.Titulo3 {
+    text-align: center;
+    padding: 30px;
+}
+
+.opciones_1 {
+    display: block;
+    padding: 10px;
+}
+
+.radio {
+    display: block;
+}
+
+.tabla {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 23px;
+    margin-left: 15%;
+    width: 70%;
+}
+
+    .tabla > th, td, tr {
+        border: 1px solid black;
+        height: 40px;
+        width: 100px;
+    }
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+th {
+    border: 1px solid black;
+    background: #F0EAEB;
+}
+
+.Valor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0px;
+    text-align: center;
+}
+
+.Precio {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    width: 100%;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+
+    .Precio > textarea {
+        border: 2px solid gray;
+        margin-left: 5px;
+        padding: 0px 0px 0px 5px;
+        width: 40%;
+        text-align: center;
+        height: 40px;
+        resize: none;
+    }
+
+.botonB {
+    background: black;
+    color: white;
+    width: 150px;
+    height: 110%;
+    font-size: 20px;
+    border-radius: 15px 15px;
+    margin-left: 10px;
+}
+
+
+@media screen and (max-width: 500px) {
+    .contenido {
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+        margin: 40px 0px;
+    }
+
+        .contenido h2 {
+            color: black;
+            padding: 14px 0px;
+            text-decoration: none;
+            text-align: center;
+            width: 100%;
+            margin-left: 0px;
+        }
+
+    .contenedor {
+        margin-left: 0px;
+        padding-left: 10px;
+    }
+
+    .contenedorIzquierda {
+        margin: 0px;
+        width: 270px;
+    }
+
+    .cuadro-texto {
+        margin-top: 3%;
+        width: 350px;
+    }
+
+        .cuadro-texto label {
+            width: 150px;
+        }
+
+        .cuadro-texto > input[type=number] {
+            width: 120px;
+        }
+
+        .cuadro-texto > input[type=text] {
+            width: 120px;
+            font-size: 10px;
+        }
+
+        .cuadro-texto select {
+            width: 120px;
+            height: 100%;
+        }
+
+    .boton1 {
+        width: 125%;
+        margin-left: 10%;
+    }
+
+    .Contenedor1_1 {
+        margin-top: 20px;
+        height: 90px;
+        width: 270px;
+    }
+
+    .Titulo3 {
+        padding: 28px 0.1px;
+    }
+
+    .opciones_1 {
+        padding: 10px;
+    }
+
+    .tabla {
+        overflow-x: auto;
+        margin: 20px 5%;
+        padding: 0px;
+        width: 90%;
+    }
+
+    table {
+        min-width: 500px;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+
+    .tabla th, td, tr {
+        border: 1px solid black;
+        height: 40px;
+        width: 100px;
+    }
+
+        tr:hover {
+            background: #F0EAEB;
+        }
+
+    .Precio {
+        margin: 3%;
+        font-size: 20px;
+    }
+
+        .Precio > h6 {
+            margin-left: 4%;
+            width: 150px;
+        }
+
+    .botonB {
+        width: 150px;
+        height: 110%;
+        font-size: 20px;
+    }
+
+    .tabla td {
+        left: 0px;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 940px) and (min-width: 500px) {
+    .contenido {
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+        margin: 70px 0px;
+    }
+
+        .contenido h2 {
+            color: black;
+            padding: 14px 0px;
+            text-decoration: none;
+            text-align: center;
+            width: 100%;
+            margin-left: 0px;
+        }
+
+    .contenedor {
+        margin-left: 0px;
+    }
+
+    .contenedorIzquierda {
+        width: 450px;
+        margin-top: 20px;
+        padding: 0px 75px;
+    }
+
+    .cuadro-texto {
+        margin-top: 3%;
+        width: 100%;
+    }
+
+        .cuadro-texto form {
+            width: 20%;
+        }
+
+        .cuadro-texto label {
+            width: 40%;
+        }
+
+        .cuadro-texto > input[type=number] {
+            width: 60%;
+        }
+
+        .cuadro-texto > input[type=text] {
+            width: 60%;
+            font-size: 10px;
+        }
+
+        .cuadro-texto select {
+            width: 60%;
+            height: 100%;
+        }
+
+    .boton1 {
+        width: 100%;
+        margin-left: 10%;
+    }
+
+    .Contenedor1_1 {
+        margin-top: 20px;
+        height: 90px;
+        width: 300px;
+    }
+
+    .Titulo3 {
+        width: 120px;
+        height: 100%;
+        font-size: 15px;
+        padding: 20px 0px;
+    }
+
+    .opciones_1 {
+        width: 120px;
+        height: 100%;
+    }
+
+    .radio {
+        width: 136px;
+        height: 33%;
+    }
+
+        .radio > input {
+            width: 10px;
+        }
+
+        .radio > label {
+            width: 126px;
+        }
+
+    .tabla {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 23px;
+        padding-left: 0px;
+        margin: 0px 20px;
+        width: 97%;
+        overflow-x: auto;
+    }
+
+        .tabla > th, td, tr {
+            border: 1px solid black;
+            height: 40px;
+            width: 100px;
+        }
+
+    table {
+        width: 1200px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .tabla th {
+        width: 0px;
+    }
+
+    th {
+        border: 1px solid black;
+        background: #F0EAEB;
+    }
+
+    .Valor {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+        .Valor label {
+            width: 100px;
+        }
+
+    .Precio {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 3%;
+        font-size: 20px;
+    }
+
+        .Precio > h6 {
+            border: 2px solid gray;
+            margin-left: 4%;
+            width: 200px;
+            text-align: center;
+        }
+
+    .botonB {
+        background: black;
+        color: white;
+        width: 200px;
+        height: 110%;
+        font-size: 20px;
+        border-radius: 15px 15px;
+        margin-left: 10px;
+    }
+
+}

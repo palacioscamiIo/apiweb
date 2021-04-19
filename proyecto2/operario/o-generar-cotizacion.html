@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <link rel='stylesheet' href='../css/main2.css' />
+    <link rel='stylesheet' href='cssoperario/o-generar-cotizacion.css' />
+
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <title>ACME S.A.S</title>
+</head>
+<body>
+    <header class="header">
+        <div class="cabecera">
+            <div class="cabeza">ACME S.A.S</div>
+            <input type="checkbox" id="btn_usuario" />
+            <div class="usuario">
+                <ul>
+                    <li><label for="btn_usuario">Operario</label></li>
+                    <li class="cerrar_s"><a href="../index.html">Cerrar sesión</a></li>
+                </ul>
+                <label for="btn_usuario"><img src="../images/operario/obrero.png" class="img_usuario" /></label>
+            </div>
+        </div>
+        <div class="container">
+            <div class="btn-menu">
+                <label for="btn-menu">☰</label>
+            </div>
+        </div>
+    </header>
+    <div class="capa"></div>
+    <!----------------->
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <label for="btn-menu">☰</label>
+            <nav>
+                <h1>Inicio</h1>
+                <ul id="accordion" class="accordion">
+                    <li>
+                        <div class="link">Productos<i class="material-icons">keyboard_arrow_down</i></div>
+                        <ul class="submenu">
+                            <li><a href="o-listar-productos.html"><i class="material-icons">format_list_bulleted</i>Ver todos</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="link">Clientes <i class="material-icons">keyboard_arrow_down</i></div>
+                        <ul class="submenu">
+                            <li><a href="o-listar-clientes.html"><i class="material-icons">format_list_bulleted</i>Ver todos</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="link">Cotizaciones <i class="material-icons">keyboard_arrow_down</i></div>
+                        <ul class="submenu">
+                            <li><a href="o-listar-cotizaciones.html"><i class="material-icons">format_list_bulleted</i>Ver todos</a></li>
+                            <li><a href="o-generar-cotizacion.html">Generar</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="link">Orden de trabajo<i class="material-icons">keyboard_arrow_down</i></div>
+                        <ul class="submenu">
+                            <li><a href="o-listar-orden.html"><i class="material-icons">format_list_bulleted</i>Ver todos</a></li>
+                            <li><a href="o-generar-orden.html">Generar</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="contenido">
+        <div class="ventana" id="vent">
+            <form action="o-listar-cotizaciones.html">
+                <h2>Cotización realizada!</h2>
+                <div class="hecho"><i class="material-icons">check_circle_outline</i></div>
+                <input type="button" class="aceptar" value="Aceptar" onclick="location.href='o-listar-cotizaciones.html'" />
+                <input type="button" class="imprimir" value="Imprimir" onclick="location.href='o-listar-cotizaciones.html'" />
+            </form>
+        </div>
+        <div class="ventana" id="vent2">
+            <form action="o-listar-orden.html">
+                <h2>¿Desea convertir la cotización en una orden de trabajo?</h2>
+                <input type="button" class="no" value="No" onclick="location.href='javascript:cerrar()'" />
+                <input type="button" class="si" value="Si" onclick="location.href='o-listar-orden.html'" />
+            </form>
+        </div>
+        <div><h1>Generar cotización</h1></div>
+        <div class="contenedor">
+            <div class="Contenedor1">
+                <div class="cuadro-texto">
+                    <label>Fecha</label>
+                    <input type="text" id="numFecha" name="numFecha" placeholder="Fecha" disabled>
+                </div>
+                <div class="cuadro-texto">
+                    <label>Factura</label>
+                    <input type="number" id="numFac" name="numFecha" placeholder="Número factura" disabled>
+                </div>
+                <div class="cuadro-texto">
+                    <label>Nombre Cliente</label>
+                    <select type="text" id="nomClient" name="nomClient" placeholder="Nombre Cliente" onchange="llenarCasillasCliente()" required>
+                        <option></option>
+                    </select>
+                </div>
+                <div class="cuadro-texto">
+                    <label>ID Cliente</label>
+                    <input type="number" id="IdC" name="IdC" placeholder="ID cliente" disabled>
+                </div>
+            </div>
+            <div class="Contenedor2">
+                <div class="cuadro-texto3">
+                    <label>Producto</label>
+                    <select id="productO" name="Producto" placeholder="Producto" onchange="llenarCasillasProducto()">
+                        <option></option>
+                    </select>
+                </div>
+                <div class="cuadro-texto3">
+                    <label>Código</label>
+                    <input type="number" id="CodigoP" name="CodigoP" placeholder="Código" disabled>
+                </div>
+                <div class="cuadro-texto3">
+                    <label>Marca</label>
+                    <input type="text" id="MarcaP" name="MarcaP" placeholder="Marca" disabled>
+                </div>
+                <div class="cuadro-texto3">
+                    <label>Modelo</label>
+                    <input type="text" id="ModeloP" name="ModeloP" placeholder="Modelo" disabled>
+                </div>
+                <div class="cuadro-texto3">
+                    <label>Cantidad</label>
+                    <input class="cuadrocant" type="number" id="Cant" name="Cant" placeholder="Ingresar Cantidad">
+                </div>
+                <div class="cuadro-texto3">
+                    <label>Precio unitario</label>
+                    <input class="cuadropre" type="number" id="Precio" name="Cant" placeholder="Ingresar precio" disabled>
+                    <input class="botonA" type="submit" id="btnAnadir" value="  + Agregar Producto &nbsp">
+                </div>
+            </div>
+        </div>
+        <div class="tabla">
+            <table id="tablaProductos">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Producto</th>
+                        <th>Código</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Cantidad</th>
+                        <th>Cantidad Disponible</th>
+                        <th>Precio Unitario</th>
+                        <th>Precio Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="Valor">
+            <input class="botonB" id="btnGrabar" type="submit" value="Grabar">
+            
+            <div class="Precio" id="CeldaTotal">
+                <label>Total:</label>
+                <textarea id="vorden" placeholder="0" disabled></textarea>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

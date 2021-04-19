@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <link rel='stylesheet' href='../css/main.css' />
+    <link rel='stylesheet' href='cssadmin/a-generar-orden.css' />
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <title>ACME S.A.S</title>
+</head>
+<body>
+    <header class="header">
+        <div class="cabecera">
+            <div class="cabeza">ACME S.A.S</div>
+            <div class="usuario">
+                <h3>Administrador</h3>
+                <img src="../images/perfil.png" class="img_usuario1"/>
+            </div>
+        </div>
+    </header>
+    <div class="contenido">
+        <div class="ventana" id="vent">
+            <form action="a-listar-cliente.html">
+                <h2>Su orden ha sido registrada!</h2>
+                <h4>El estado de su pedido se encuentra en proceso</h4>
+                <div class="hecho"><i class="material-icons">check_circle_outline</i></div>
+                <input type="button" class="si" value="Aceptar" onclick="location.href='o-listar-orden.html'" />
+            </form>
+        </div>
+        <div class="ventana" id="vent2">
+            <form action="a-listar-cliente.html">
+                <h2>Su compra se ha registrado exitosamente!</h2>
+                <h4>Su orden ha sido terminada</h4>
+                <h6>El stock ha sido actualizado</h6>
+                <div class="hecho"><i class="material-icons">check_circle_outline</i></div>
+                <input type="button" class="si" value="Aceptar" onclick="location.href='o-listar-orden.html'" />
+            </form>
+        </div>
+        <div><h1>Generar Orden de Trabajo</h1></div>
+        <div class="contenedor">
+            <div class="contenedorIzquierda">
+                <div class="Contenedor1">
+                    <div class="cuadro-texto">
+                        <label>Factura</label>
+                        <input type="number" id="numFac" name="numFac" placeholder="Número factura" disabled>
+                    </div>
+                    <div class="cuadro-texto">
+                        <label>Nombre Cliente</label>
+                        <select type="text" id="nomClient" name="nomClient" placeholder="Nombre Cliente" onchange="llenarCasillasCliente()" required>
+                            <option></option>
+                        </select>
+                    </div>
+                    <div class="cuadro-texto">
+                        <label>ID Cliente</label>
+                        <input type="number" id="IdC" name="IdC" placeholder="ID cliente" disabled>
+                    </div>
+                    <div class="cuadro-texto">
+                        <label>Responsable</label>
+                        <input type="text" id="Resp" name="Resp" placeholder="Nombre del responsable">
+                    </div>
+                </div>
+                <div class="Contenedor1_1">
+                    <div class="Titulo3"><h3>Método de Pago</h3></div>
+                    <div class="opciones_1" id="MetodoPago">
+                        <div class="radio">
+                            <input type="radio" id="Efectivo" name="Pago" value="Efectivo">
+                            <label for="Efectivo">Efectivo</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="Credito" name="Pago" value="Credito">
+                            <label for="Credito">Tarj. Crédito</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="PSE" name="Pago" value="PSE">
+                            <label for="PSE">PSE</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Contenedor2">
+                <div class="cuadro-texto3">
+                    <label>Producto</label>
+                    <select id="productO" name="Producto" placeholder="Producto" onchange="llenarCasillasProducto()">
+                        <option></option>
+                    </select>
+                </div>
+                <div class="cuadro-texto3">
+                    <label>Código</label>
+                    <input type="number" id="CodigoP" name="CodigoP" placeholder="Código" disabled>
+                </div>
+                <div class="cuadro-texto3">
+                    <label>Marca</label>
+                    <input type="text" id="MarcaP" name="MarcaP" placeholder="Marca" disabled>
+                </div>
+                <div class="cuadro-texto3">
+                    <label>Modelo</label>
+                    <input type="text" id="ModeloP" name="ModeloP" placeholder="Modelo" disabled>
+                </div>
+                <div class="cuadro-texto3">
+                    <label>Cantidad</label>
+                    <input class="cuadrocant" type="number" id="Cant" name="Cant" placeholder="Ingresar Cantidad" required>
+                </div>
+                <div class="cuadro-texto3">
+                    <label>Precio unitario</label>
+                    <input class="cuadropre" type="number" id="Precio" name="Precio" placeholder="Precio Producto" disabled>
+                    <input class="botonA" id="btnAnadir" type="submit" value="  + Añadir &nbsp">
+                </div>
+            </div>
+        </div>
+        <div class="tabla">
+            <table id="tablaProductos">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Producto</th>
+                        <th>Código</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Cantidad</th>
+                        <th>Cantidad Disponible</th>
+                        <th>Precio Unitario</th>
+                        <th>Precio Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="Valor">
+            
+                <input class="botonB" id="Guardar" type="submit" value="Generar Orden">
+           
+                <input class="botonB" id="Concretar" type="submit" value="Cancelar">
+           
+            <div class="Precio" id="CeldaTotal">
+                <label>Total:</label>
+                <textarea id="vorden" placeholder="0" disabled></textarea>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <link rel='stylesheet' href='../css/main.css' />
+    <link rel='stylesheet' href='cssadmin/a-registrar-compra.css' />
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <title>ACME S.A.S</title>
+</head>
+<body>
+    <header class="header">
+        <div class="cabecera">
+            <div class="cabeza">ACME S.A.S</div>
+            <div class="usuario">
+                <h3>Administrador</h3>
+                <img src="../images/perfil.png" class="img_usuario1"/>
+            </div>
+        </div>
+    </header>
+    <div class="contenido">
+        <div><h1>Modificar Compra</h1></div>
+        <div class="contenedor">
+            <div class="Contenedor1">
+                <div class="cuadro-texto">
+                    <label>Factura</label>
+                    <input type="number" id="numFac" name="nunFac" placeholder="Número factura" disabled>
+                </div>
+                <div class="cuadro-texto">
+                    <label>Nombre Proveedor</label>
+                    <input type="text" id="nomClient" name="nomClient" placeholder="Nombre Cliente" disabled>
+                </div>
+                <div class="cuadro-texto">
+                    <label>ID Proveedor</label>
+                    <input type="number" id="IdC" name="IdC" placeholder="ID cliente" disabled>
+                </div>
+            </div>
+            <div class="Contenedor2">
+                <div class="cuadro-texto3">
+                    <label>Producto</label>
+                    <select  id="productO" name="Producto" placeholder="Producto" onchange="llenarCasillaspro()">
+                        <option></option>
+                    </select>
+                </div>
+                <div class="cuadro-texto3">
+                    <label>Código</label>
+                    <input type="number" id="codigoR" name="codigoR" placeholder="Codigo" disabled>
+                </div>
+                <div class="cuadro-texto3">
+                    <label>Marca</label>
+                    <input type="text" id="marcaR" name="marcaR" placeholder="Marca" disabled>
+                </div>
+                <div class="cuadro-texto3">
+                    <label>Modelo</label>
+                    <input type="text" id="modeloR" name="modeloR" placeholder="modelo" disabled>
+                </div>
+                <div class="cuadro-texto3">
+                    <label>Cantidad</label>
+                    <input class="cuadrocant" type="number" id="Cant" name="Cant" placeholder="Ingresar Cantidad">
+                </div>
+                <div class="cuadro-texto3">
+                    <label>Precio unitario</label>
+                    <input class="cuadropre" type="number" id="Precio" name="precioR" placeholder="Precio Unitario">
+                    <input class="botonA" id="btnanadir" type="submit" value="  + Añadir &nbsp">
+                </div>
+            </div>
+        </div>
+        <div class="tabla">
+            <table id="tablaCompras">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Producto</th>
+                        <th>Código</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Cantidad</th>
+                        <th>Precio Unitario</th>
+                        <th>Precio Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>                
+            </table>
+        </div>
+        <div class="Valor">
+            <div class="Precio" id="CeldaTotal">
+                <label>Total:</label>
+                <textarea id="vcompra"  placeholder="0" disabled></textarea>
+            </div>
+            <input class="botonB" id="btn-mod-orden" type="submit" value="Modificar" >
+        </div>
+    </div>
+</body>
+</html>

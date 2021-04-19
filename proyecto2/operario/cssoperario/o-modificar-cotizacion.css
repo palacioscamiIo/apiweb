@@ -1,0 +1,623 @@
+.contenido {
+    height: 70%;
+}
+
+    .contenido h1 {
+        color: black;
+        padding: 14px 0px;
+        text-decoration: none;
+        text-align: center;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.Contenerdor1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    width: 450px;
+}
+
+.cuadro-texto {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    height: 30px;
+}
+
+    .cuadro-texto label {
+        width: 160px;
+    }
+
+    .cuadro-texto select {
+        width: 40%;
+        height: 100%;
+    }
+
+    .cuadro-texto input[type=date] {
+        width: 40%;
+    }
+
+    .cuadro-texto input[type=number] {
+        width: 40%;
+    }
+
+    .cuadro-texto input[type=text] {
+        width: 40%;
+    }
+
+.boton1 {
+    margin-left: 10%;
+    background: black;
+    color: white;
+    font-size: 15px;
+    border-radius: 20px 20px;
+    width: 140%;
+}
+
+.Contenedor2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    width: 450px;
+}
+
+.cuadro-texto3 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1%;
+}
+
+    .cuadro-texto3 label {
+        margin-right: 40px;
+        width: 120px;
+    }
+
+.boton5 {
+    margin-left: 10%;
+    background: black;
+    color: white;
+    font-size: 15px;
+    border-radius: 20px 20px;
+    width: 140%;
+}
+
+.cuadro-texto3 select {
+    width: 40%;
+}
+
+.cuadro-texto3 p {
+    border: 1px solid gray;
+    background: white;
+    font-size: 14px;
+    height: 100%;
+    width: 40%;
+}
+
+.cuadrocant,
+.cuadropre {
+    height: 90%;
+    width: 40%;
+}
+
+.botonA {
+    background: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 15px 15px;
+    height: 100%;
+    width: 20%;
+    margin-left: 10px;
+}
+
+.tabla {
+    margin-top: 23px;
+    margin-left: 15%;
+    width: 70%;
+}
+
+    .tabla > th, td, tr {
+        border: 1px solid black;
+        height: 40px;
+        width: 100px;
+    }
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+th {
+    border: 1px solid black;
+    background: #F0EAEB;
+}
+
+.Valor {
+    display: flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	padding: 3% 0px 3% 18%;
+}
+
+.botonB {
+    background: black;
+    color: white;
+    width: 30%;
+    height: 100%;
+    font-size: 20px;
+    border-radius: 15px 15px;
+}
+
+.Precio {
+    display: flex;
+	flex-wrap:wrap;
+	justify-content: center;
+	width: 30%;
+	font-size: 20px;
+}
+
+    .Precio > h6 {
+        border: 2px solid gray;
+        margin-left: 5px;
+        padding: 0px 0px 0px 5px;
+        width: 40%;
+        text-align: center;
+    }
+
+th:first-child {
+    border: none;
+    background: rgba(0,0,0,0);
+}
+
+td:first-child {
+    border: none;
+}
+
+.boton2 {
+    background: black;
+    color: white;
+    font-size: 15px;
+    border-radius: 20px 20px;
+    width: 90%;
+    height: 80%;
+}
+
+.ventana {
+    background-color: gray;
+    width: 35%;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 22px;
+    position: fixed;
+    left: 34%;
+    top: 30%;
+    display: none;
+}
+
+    .ventana input[type=button] {
+        width: 39%;
+        height: auto;
+        background-color: white;
+        margin: 20px 5% 10px 5%;
+        border-radius: 20px;
+        color: black;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+        .ventana input[type=button]:hover {
+            background-color: dodgerblue;
+        }
+
+    .ventana i {
+        font-size: 150px;
+    }
+
+@media screen and (max-width: 500px) {
+    .contenido {
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+        margin: 40px 0px;
+    }
+
+        .contenido h1 {
+            color: black;
+            padding: 14px 0px;
+            text-decoration: none;
+            text-align: center;
+            width: 100%;
+            margin-left: 0px;
+        }
+
+    .contenedor {
+        margin-left: 0px;
+        padding-left: 10px;
+    }
+
+    .Contenedor1 {
+        margin: 0px;
+    }
+
+    .cuadro-texto {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2%;
+        height: 30px;
+    }
+
+        .cuadro-texto label {
+            width: 100px;
+        }
+
+        .cuadro-texto > input[type=number] {
+            width: 120px;
+        }
+
+        .cuadro-texto > input[type=text] {
+            width: 120px;
+            font-size: 10px;
+        }
+
+        .cuadro-texto > input[type=date] {
+            width: 120px;
+            font-size: 10px;
+        }
+
+        .cuadro-texto select {
+            width: 120px;
+            height: 100%;
+        }
+
+    .boton1 {
+        width: 125%;
+        margin-left: 10%;
+    }
+
+    .cuadro-texto3 {
+        margin-top: 5%;
+    }
+
+        .cuadro-texto3 label {
+            width: 25%;
+        }
+
+    .boton5 {
+        width: 125%;
+        margin-left: 10%;
+    }
+
+    .Contenedor2 {
+        width: 350px;
+        margin-top: 20px;
+    }
+
+    .cuadro-texto3 select {
+        width: 138px;
+    }
+
+    .cuadro-texto3 p {
+        font-size: 14px;
+        height: 100%;
+        width: 138px;
+    }
+
+    .cuadrocant,
+    .cuadropre {
+        height: 30px;
+        width: 138px;
+    }
+
+    .botonA {
+        font-size: 20px;
+        border-radius: 15px 15px;
+        height: 50%;
+        width: 100%;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+    .tabla {
+        overflow-x: auto;
+        margin: 20px 5%;
+        padding: 0px;
+        width: 90%;
+    }
+
+    table {
+        min-width: 1200px;
+        margin-left: 0px;
+    }
+
+    td:first-child {
+        margin-left: 120px;
+    }
+
+    tr:first-child {
+        width: 80px;
+    }
+
+    tr:hover {
+        background: #F0EAEB;
+    }
+
+    .Valor {
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        padding: 3% 0px 3% 18%;
+        flex-wrap:wrap;
+    }
+    .botonB {
+        background: black;
+        color: white;
+        font-size: 20px;
+        border-radius: 15px 15px;
+        height: 80%;
+        width: 30%;
+    }
+    .Precio {
+        display: flex;   
+        justify-content: center;
+        width: 20%;
+        font-size: 20px;
+    }
+    .Precio > h6{
+        border: 2px solid gray;
+        margin-left: 5px;
+        padding: 0px 0px 0px 5px;
+        width: 40%;
+        text-align: center;
+    }
+
+    .boton2 {
+        width: 80px;
+        height: 80%;
+    }
+
+    .tabla td {
+        left: 0px;
+        margin-left: 0px;
+    }
+
+    .ventana {
+        width: 80%;
+        left: 10%;
+        top: 10%;
+        height: auto;
+        bottom: auto;
+    }
+
+        .ventana h2 {
+            font-size: 20px;
+        }
+
+        .ventana input[type=button] {
+            width: 39%;
+            font-size: 15px;
+        }
+
+        .ventana i {
+            font-size: 80px;
+        }
+}
+
+@media screen and (max-width: 940px) and (min-width: 500px) {
+    .contenido {
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+        margin: 70px 0px;
+    }
+
+        .contenido h1 {
+            color: black;
+            padding: 14px 0px;
+            text-decoration: none;
+            text-align: center;
+            width: 100%;
+            margin-left: 0px;
+        }
+
+    .contenedor {
+        margin-left: 0px;
+    }
+
+    .Contenedor1 {
+        width: 500px;
+        padding: 0px 70px;
+        margin: 0px;
+    }
+
+    .cuadro-texto {
+    
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2%;
+        height: 30px;
+    }
+
+        .cuadro-texto form {
+            width: 20%;
+        }
+
+        .cuadro-texto label {
+            width: 150px;
+        }
+
+        .cuadro-texto > input[type=number] {
+            width: 120px;
+        }
+
+        .cuadro-texto > input[type=text] {
+            width: 120px;
+            font-size: 10px;
+        }
+
+        .cuadro-texto > input[type=date] {
+            width: 120px;
+            font-size: 10px;
+        }
+
+        .cuadro-texto select {
+            width: 120px;
+            height: 100%;
+        }
+
+    .boton1 {
+        width: 100%;
+        margin-left: 10%;
+    }
+
+    .cuadro-texto3 {
+        margin-top: 5%;
+    }
+
+        .cuadro-texto3 label {
+            width: 25%;
+        }
+
+        .cuadro-texto3 form {
+            width: 20%;
+        }
+
+    .boton5 {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .Contenedor2 {
+        width: 500px;
+        margin-top: 20px;
+        padding: 0px 75px;
+    }
+
+    .cuadro-texto3 select {
+        width: 138px;
+    }
+
+    .cuadro-texto3 p {
+        font-size: 14px;
+        height: 100%;
+        width: 138px;
+    }
+
+    .cuadrocant,
+    .cuadropre {
+        height: 30px;
+        width: 138px;
+    }
+
+    .botonA {
+        font-size: 20px;
+        border-radius: 15px 15px;
+        height: 50%;
+        width: 100%;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+    .tabla {
+        margin-top: 23px;
+        padding-left: 20px;
+        margin-left: 0px;
+        width: 95%;
+        overflow-x: auto;
+    }
+
+        .tabla > th, td, tr {
+            border: 1px solid black;
+            height: 40px;
+            width: 100px;
+        }
+
+    table {
+        min-width: 1200px;
+        margin-left: 0px;
+    }
+
+    .tabla th {
+        width: 0px;
+    }
+
+    th {
+        border: 1px solid black;
+        background: #F0EAEB;
+    }
+
+    .Valor {
+        display: flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+        padding: 3% 0px 3% 18%;
+        
+    }
+
+    .botonB {
+        width: 70%;
+		height: 70%;
+		font-size: 15px;
+    }
+
+    .Precio {
+        display: flex;   
+        justify-content: center;
+        width: 20%;
+        font-size: 20px;
+    }
+
+        .Precio > h6 {
+            margin-left: 5px;
+            padding: 5px 5px;
+            width: 120px;
+        }
+
+    th:first-child {
+        border: none;
+        background: rgba(0,0,0,0);
+    }
+
+    td:first-child {
+        border: none;
+    }
+
+    .boton2 {
+        background: black;
+        color: white;
+        font-size: 15px;
+        border-radius: 20px 20px;
+        width: 100px;
+        height: 80%;
+    }
+
+    .ventana {
+        width: 50%;
+        left: 25%;
+        top: 20%;
+    }
+
+        .ventana h2 {
+            font-size: 20px;
+        }
+
+
+        .ventana input[type=button] {
+            width: 39%;
+            font-size: 20px;
+        }
+
+        .ventana i {
+            font-size: 125px;
+        }
+}

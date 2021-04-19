@@ -1,0 +1,203 @@
+.contenido {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    margin: initial 0px initial 0px;
+}
+
+h1 {
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor{
+	display: flex;
+	flex-wrap:wrap;
+	flex-direction:row;
+	justify-content:space-around;
+}
+
+.contenedor1 {
+	display: flex;
+	flex-direction:column;
+	margin-left: 0px;
+	padding: 0px 0px 0px 50px;
+}
+
+.cuadro-texto {
+	display: flex;
+	flex-wrap:wrap;
+	margin-top: 5%;
+	height: 30px;
+	width: 300px;
+}
+
+.botona {
+    margin-top: 20px;
+    justify-content: space-around;
+    display: flex;
+    width: 200px;
+    height: 40px;
+    border-radius: 70px;
+    border: 2px solid black;
+    margin-left: 10px;
+}
+
+.cuadro-texto-entrada{
+    display: flex;
+    font-size: 14px;
+    width: 150px;
+    justify-content: flex-end;
+    white-space: normal;
+    margin-right: 50px;
+    height: 100%;
+}
+
+.cuadro-texto label{
+	width: 40%;
+}
+
+.cuadro-texto input[type=date]{
+	width: 55%;
+}
+
+.radio {
+	display: flex;
+	flex-direction: row;
+	padding: 5px;
+}
+
+.boton{
+	padding: 35px;
+}
+.botonB {
+	background: black;
+	color: white;
+	width: 140%;
+	height: 100%;
+	font-size: 25px;
+	border-radius: 15px 15px;
+}
+@media screen and (max-width: 500px) {
+.contenido {
+	height: 100%;
+	width: 100%;
+	padding: 0px;
+	margin: 40px 0px;
+}
+.contenido h1 {
+    color: black;
+    padding: 14px 0px;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    margin-left: 0px;
+}
+.contenedor{
+	margin-left: 0px;
+	padding-left: 10px;
+	display: flex;
+	flex-direction:column;
+}
+.contenedor1{
+	margin: 0px;
+	width: 270px;
+	padding: 0% 5%;
+}
+.cuadro-texto {
+	margin-top: 3%;
+	width: 300px;	
+}
+.cuadro-texto label{
+	width: 150px;
+}
+.cuadro-texto > input[type=date] {
+	width: 120px;
+}
+.radio {
+	padding: 5px;
+}
+.contenedor2 {
+	display: flex;
+	flex-direction: column;
+	margin-left: 0px;
+	padding: 15% 0% 0% 7%; 
+}
+.boton{
+	padding: 25px 30% 15px 10%;
+	align-items:center;
+}
+.botonB {
+	background: black;
+	color: white;
+	width: 150px;
+	height: 100%;
+	font-size: 25px;
+	border-radius: 15px 15px;
+}
+}	
+@media screen and (max-width: 940px) and (min-width: 500px) {
+.contenido {
+	height: 100%;
+	width: 100%;
+	padding: 0px;
+	margin: 70px 0px;
+}
+.contenido h1 {
+    color: black;
+    padding: 14px 0px;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    margin-left: 0px;
+}
+.contenedor{
+	margin-left: 0px;
+	padding-left: 10px;
+	display: flex;
+	flex-direction:column;
+}
+.contenedor1{
+	margin: 0px;
+	width: 270px;
+	padding: 0px 0px 20px 10px;
+}
+.cuadro-texto {
+	margin-top: 3%;
+	width: 300px;	
+}
+.cuadro-texto label{
+	width: 150px;
+}
+.cuadro-texto > input[type=date] {
+	width: 120px;
+}
+.radio {
+	padding: 5px;
+	width: 400px;
+}
+.radio > input {
+	width: 40px;
+}
+.contenedor2 {
+	display: flex;
+	flex-direction: column;
+	margin-left: 0px;
+	padding: 40px 0px 20px 10px; 
+}
+.boton{
+	padding: 25px 30% 15px 10%;
+	align-items:center;
+}
+.botonB {
+	background: black;
+	color: white;
+	width: 150px;
+	height: 100%;
+	font-size: 25px;
+	border-radius: 15px 15px;
+}
+}
